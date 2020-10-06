@@ -1,14 +1,15 @@
 Categories:
   - Multimedia
   - Guardian Project
-AuthorEmail: support@guardianproject.info
+License: GPL-3.0-or-later
 AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
 AuthorWebSite: https://guardianproject.info/
+SourceCode: https://github.com/guardianproject/proofmode
+IssueTracker: https://github.com/guardianproject/proofmode/issues
 LiberapayID: '33617'
 
 AutoName: 'ProofMode: Verified Witnessing'
 
-AutoUpdateMode: None
-UpdateCheckMode: None
 
 ArchivePolicy: 1 versions
