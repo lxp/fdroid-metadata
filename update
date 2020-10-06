@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+. ../variables
+basedir=`cd $(dirname $0); pwd`
+
+for f in $basedir/build/*; do
+    test -d $f/.git || continue
+    echo $f
+    git -C $f clean -fdx
+    git -C $f checkout master
+    git -C $f reset --hard
+    git -C $f pull --ff-only
+done
+
+cd $basedir
+chmod 0600 config.py
+~/code/fdroid/server/fdroid update --verbose --delete-unknown
+
+export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+~/code/fdroid/server/fdroid deploy -v
