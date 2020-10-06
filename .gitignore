@@ -8,3 +8,5 @@
 /tmp/
 /virustotal/
 variables
+/.fdroid-server-update-s3cfg
+/opensc-fdroid.cfg
