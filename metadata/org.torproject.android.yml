@@ -15,7 +15,7 @@ FlattrID: '5649'
 LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
-AutoName: "Orbot: Proxy with Tor"
+Name: "Orbot: Proxy with Tor"
 
 RepoType: git
 Repo: https://github.com/guardianproject/orbot.git
