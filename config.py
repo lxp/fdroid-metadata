@@ -31,6 +31,8 @@ keystore = 'NONE'
 repo_keyalias = '1'
 keystorepass = os.getenv('keystorepass')
 
+make_current_version_link = False
+
 mirrors = [
     'https://guardianproject.info/fdroid',
     'http://bdf2wcxujkg6qqff.onion/fdroid',
