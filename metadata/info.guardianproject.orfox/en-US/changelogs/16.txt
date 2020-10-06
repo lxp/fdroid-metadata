@@ -1,0 +1,5 @@
+After nearly a year since we released the alpha version of Tor Browser on Android, the time for sunsetting Orfox has come.
+
+If you still have Orfox installed on your device, this release will direct you to download the new Tor Browser for Android.
+
+Learn more at: https://blog.torproject.org/orfox-paved-way-tor-browser-android

@@ -18,4 +18,4 @@ Name: Orfox
 RepoType: git
 Repo: https://github.com/guardianproject/orfox.git
 
-ArchivePolicy: 0 versions
+ArchivePolicy: 1 versions
