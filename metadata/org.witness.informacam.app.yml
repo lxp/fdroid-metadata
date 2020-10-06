@@ -11,7 +11,7 @@ IssueTracker: https://dev.guardianproject.info/projects/informacam/issues
 LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
-AutoName: 'CameraV: Secure Visual Proof'
+Name: 'CameraV: Secure Visual Proof'
 
 RepoType: git
 Repo: https://github.com/guardianproject/CameraV.git

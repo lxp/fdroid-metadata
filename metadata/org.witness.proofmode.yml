@@ -9,7 +9,7 @@ SourceCode: https://github.com/guardianproject/proofmode
 IssueTracker: https://github.com/guardianproject/proofmode/issues
 LiberapayID: '33617'
 
-AutoName: 'ProofMode: Verified Witnessing'
+Name: 'ProofMode: Verified Witnessing'
 
 
 ArchivePolicy: 1 versions
