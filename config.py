@@ -26,8 +26,10 @@ client. This contains older versions of applications from the main repository.
 repo_maxage = 14
 update_stats = True
 
-local_copy_dir = '/media/%s/fdroid-shuffler/fdroid' % os.getenv('USER')
-sync_from_local_copy_dir = True
+# nitrokey signing
+keystore = 'NONE'
+repo_keyalias = '1'
+keystorepass = os.getenv('keystorepass')
 
 mirrors = [
     'https://guardianproject.info/fdroid',
