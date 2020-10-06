@@ -248,6 +248,10 @@ tor-browser-9.5.3-android-aarch64-multi.apk org.torproject.torbrowser 2020-08-06
 tor-browser-9.5.3-android-armv7-multi.apk org.torproject.torbrowser 2020-08-06
 tor-browser-9.5.3-android-x86-multi.apk org.torproject.torbrowser 2020-08-06
 tor-browser-9.5.3-android-x86_64-multi.apk org.torproject.torbrowser 2020-08-06
+tor-browser-9.5.4-android-aarch64-multi.apk org.torproject.torbrowser 2020-08-28
+tor-browser-9.5.4-android-armv7-multi.apk org.torproject.torbrowser 2020-08-28
+tor-browser-9.5.4-android-x86-multi.apk org.torproject.torbrowser 2020-08-28
+tor-browser-9.5.4-android-x86_64-multi.apk org.torproject.torbrowser 2020-08-28
 tor-browser-10.0a3-android-aarch64-multi.apk org.torproject.torbrowser_alpha 2020-08-06
 tor-browser-10.0a3-android-armv7-multi.apk org.torproject.torbrowser_alpha 2020-08-06
 tor-browser-10.0a3-android-x86-multi.apk org.torproject.torbrowser_alpha 2020-08-06
@@ -256,6 +260,10 @@ tor-browser-10.0a4-android-aarch64-multi.apk org.torproject.torbrowser_alpha 202
 tor-browser-10.0a4-android-armv7-multi.apk org.torproject.torbrowser_alpha 2020-08-06
 tor-browser-10.0a4-android-x86-multi.apk org.torproject.torbrowser_alpha 2020-08-06
 tor-browser-10.0a4-android-x86_64-multi.apk org.torproject.torbrowser_alpha 2020-08-06
+tor-browser-10.0a6-android-aarch64-multi.apk org.torproject.torbrowser_alpha 2020-08-28
+tor-browser-10.0a6-android-armv7-multi.apk org.torproject.torbrowser_alpha 2020-08-28
+tor-browser-10.0a6-android-x86-multi.apk org.torproject.torbrowser_alpha 2020-08-28
+tor-browser-10.0a6-android-x86_64-multi.apk org.torproject.torbrowser_alpha 2020-08-28
 tor-browser-android-arm-1.0a1.apk org.torproject.torbrowser_alpha 2018-10-08
 tor-browser-android-arm-1.0a2.apk org.torproject.torbrowser_alpha 2018-10-11
 tor-browser-android-arm-1.0a3.apk org.torproject.torbrowser_alpha 2018-11-05
