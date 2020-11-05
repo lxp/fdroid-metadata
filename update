@@ -15,7 +15,7 @@ for f in $basedir/build/*; do
 done
 
 cd $basedir
-chmod 0600 config.py
+chmod 0600 config.yml
 ~/code/fdroid/server/fdroid update --verbose --delete-unknown
 
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
