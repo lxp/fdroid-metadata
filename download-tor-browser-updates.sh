@@ -5,12 +5,12 @@ download_and_verify() {
     version=$1
     apk=$2
     cd $(mktemp -d)
-    if ! wget -c https://dist.torproject.org/torbrowser/${version}/${apk}.asc; then
+    if ! wget --quiet --continue https://dist.torproject.org/torbrowser/${version}/${apk}.asc; then
 	printf "\nERROR $apk\n\n"
 	return
     fi
 
-    wget -c https://dist.torproject.org/torbrowser/${version}/${apk} 
+    wget --quiet --continue https://dist.torproject.org/torbrowser/${version}/${apk}
     if gpg --verify ${apk}.asc; then
 	rsync -axv \
 	      ${apk} \
@@ -42,7 +42,8 @@ do
 	elif [ -e $basedir/repo/$apk ]; then
 	    echo Skipping existing repo $apk
 	else
-	    download_and_verify $version $apk
+	    download_and_verify $version $apk &
 	fi
     done
+    wait
 done
