@@ -9,4 +9,5 @@
 /virustotal/
 variables
 /.fdroid-server-update-s3cfg
+/.fdroid-deploy-s3cfg
 /opensc-fdroid.cfg
