@@ -1,4 +1,6 @@
-#!/bin/sh -e
+#!/bin/sh -ex
+
+test -d repo
 
 . ../variables
 basedir=`cd $(dirname $0); pwd`
