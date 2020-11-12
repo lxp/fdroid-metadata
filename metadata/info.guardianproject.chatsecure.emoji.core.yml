@@ -12,6 +12,9 @@ IssueTracker: https://dev.guardianproject.info/projects/chatsecure/issues
 LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
+RepoType: git
+Repo: https://github.com/guardianproject/ChatSecureVoicePlugin.git
+
 Summary: ChatSecure Open Emoji Plugin
 Description: |
   Plugin for https://f-droid.org/packages/info.guardianproject.otr.app.im/ to support for core emoji input
