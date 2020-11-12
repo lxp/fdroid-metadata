@@ -32,15 +32,9 @@ lint:
         ./tools/audit-gradle.py $CHANGED;
         set +x;
       fi
+    - fdroid lint -f $CHANGED || true  # too pedantic for us
     - export EXITVALUE=0
-    - fdroid lint -f $CHANGED || {
-          export EXITVALUE=1;
-          printf "\nThese files have lint issues:\n";
-          fdroid rewritemeta -l $CHANGED;
-          printf "\nThese are the formatting issues:\n";
-          fdroid rewritemeta $CHANGED;
-          git --no-pager diff --color=always;
-      }
+    - fdroid readmeta || export EXITVALUE=1
     - apt-get -qy update
     - apt-get -qy install --no-install-recommends exiftool yamllint
     - find metadata/ -name '*.jp*g' -o -name '*.png' | xargs exiftool -all=
