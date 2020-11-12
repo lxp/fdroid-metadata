@@ -1,21 +1,27 @@
 Categories:
   - Guardian Project
   - Security
-License: GPL-3.0-or-later
+License: Apache-2.0
 AuthorName: Guardian Project
 AuthorEmail: support@guardianproject.info
-AuthorWebSite: https://guardianproject.info
-SourceCode: https://github.com/guardianproject/circulo
-IssueTracker: https://github.com/guardianproject/circulo/issues
+AuthorWebSite: https://encirculo.org/
+SourceCode: https://gitlab.com/circuloapp/circulo-android
+IssueTracker: https://gitlab.com/circuloapp/circulo-android/issues
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 LiberapayID: 33617
 
-AutoName: Circulo
+AutoName: Círculo
 Summary: Protect personal spaces and possessions without compromising privacy
 
 Description: |
- Circulo was developed through a collaboration between Article19  and
- Guardian Project.
+  Keep yourself and your community safe with Círculo, an easy to use
+  app that allows you to send check-ins and urgent alerts in a fast
+  and private way to a pre-selected circle of supporters.  Círculo is
+  a safe way to share your concerns, status and location with a small
+  group of close friends, relatives or colleagues.
+
+  Círculo was developed through a collaboration between Article19,
+  Circle of 6, and Guardian Project.
 
 RepoType: git
-Repo: https://github.com/guardianproject/circulo
+Repo: https://gitlab.com/circuloapp/circulo-android.git

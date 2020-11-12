@@ -35,6 +35,9 @@ Description: |-
     please visit our wiki for more instructions:
     http://storymaker.cc/wiki/index.php?title=Translation
 
+RepoType: git
+Repo: https://github.com/guardianproject/storymaker.git
+
 ArchivePolicy: 0 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
