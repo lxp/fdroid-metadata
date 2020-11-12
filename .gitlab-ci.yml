@@ -2,7 +2,7 @@ image: registry.gitlab.com/fdroid/ci-images-server:latest
 
 lint:
   before_script:
-    - printf "Package\x3a androguard fdroidserver python3-asn1crypto python3-ruamel.yaml\nPin\x3a release a=stretch-backports\nPin-Priority\x3a 500\n" > /etc/apt/preferences.d/debian-stretch-backports.pref
+    - printf "Package\x3a androguard fdroidserver python3-asn1crypto python3-ruamel.yaml yamllint\nPin\x3a release a=stretch-backports\nPin-Priority\x3a 500\n" > /etc/apt/preferences.d/debian-stretch-backports.pref
     - echo "deb http://deb.debian.org/debian/ stretch-backports main" > /etc/apt/sources.list.d/backports.list
     - apt-get update
     - apt-get -qy dist-upgrade
@@ -42,7 +42,7 @@ lint:
           git --no-pager diff --color=always;
       }
     - apt-get -qy update
-    - apt-get -qy install --no-install-recommends exiftool
+    - apt-get -qy install --no-install-recommends exiftool yamllint
     - find metadata/ -name '*.jp*g' -o -name '*.png' | xargs exiftool -all=
     - echo "these images have EXIF that must be stripped:"
     - git --no-pager diff --stat
@@ -50,4 +50,5 @@ lint:
     - ./tools/check-localized-metadata.py || export EXITVALUE=1
     - ./tools/check-keyalias-collision.py || export EXITVALUE=1
     - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
+    - for f in metadata/*.yml; do yamllint $f || export EXITVALUE=1; done
     - exit $EXITVALUE
