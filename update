@@ -16,7 +16,16 @@ done
 
 cd $basedir
 chmod 0600 config.yml
-~/code/fdroid/server/fdroid update --verbose --delete-unknown
+~/code/fdroid/fdroidserver/fdroid update --verbose --delete-unknown --nosign
+
+if ./index-unchanged.py; then
+    echo index unchanged, do not publish
+    exit
+fi
+
+~/code/fdroid/fdroidserver/fdroid signindex -v
 
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
-~/code/fdroid/server/fdroid deploy -v
+while ! ~/code/fdroid/fdroidserver/fdroid deploy -v; do
+    sleep 5
+done
